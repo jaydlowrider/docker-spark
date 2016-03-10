@@ -12,7 +12,4 @@ cd /usr/local/spark
            --executor-memory 4G \
            --total-executor-cores 3 \
            /bar-aggregation-service-all-1.0.jar \
-           2016-03-04 \
-           tcp://172.17.42.1 \
-           test.topic
-
+           "$@"
