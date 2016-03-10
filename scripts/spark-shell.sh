@@ -6,4 +6,5 @@ cd /usr/local/spark
 	--master spark://${SPARK_MASTER_PORT_7077_TCP_ADDR}:${SPARK_MASTER_ENV_SPARK_MASTER_PORT}  \
 	-i ${SPARK_LOCAL_IP} \
 	--properties-file /spark-defaults.conf \
+        --jars /bar-aggregation-service-all-1.0.jar
 	"$@" 
